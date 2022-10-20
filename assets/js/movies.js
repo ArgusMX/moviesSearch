@@ -1,5 +1,6 @@
 import {
   createMarkup,
+  createStyle,
   addMovieToList, 
   clearMoviesMarkup, 
   inputSearch, 
@@ -42,6 +43,7 @@ export const inputSearchHandler = (e) => {
 
 export const appInit = (url) => {
   createMarkup();
+  createStyle();
   apiURL = url || 'http://www.omdbapi.com'
   inputSearch.addEventListener('keyup', inputSearchHandler); 
 };
