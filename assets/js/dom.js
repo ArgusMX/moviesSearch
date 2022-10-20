@@ -235,7 +235,8 @@ export const addMovieToList = (movie) => {
   const item = createElement({
     type: 'div',
     attrs: {class: 'movie'},
-    container: moviesList
+    container: moviesList,
+    position: 'prepend'
   });
 
   createElement({
